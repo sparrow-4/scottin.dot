@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+/* ✅ Font Class */
+.font-spt {
+  font-family: "League Spartan", sans-serif;
+}
+
+/* ✅ Components Layer */
+@layer components {
+  @keyframes marqueeScroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/* ✅ Base Layer */
+@layer base {
+  button {
+    cursor: pointer;
+  }
+}
+
+/* ✅ Scrollbar Hiding */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
