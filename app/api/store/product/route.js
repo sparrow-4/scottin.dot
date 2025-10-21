@@ -2,7 +2,8 @@ import imagekit from "@/configs/imagekit";
 import prisma from "@/lib/prisma";
 import authSeller from "@/middlewares/authSeller";
 import { getAuth } from "@clerk/nextjs/server";
-import { transform } from "lightningcss";
+
+
 import { NextResponse } from "next/server";
 
 // add a new product
