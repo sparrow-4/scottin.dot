@@ -1,5 +1,5 @@
 // vercel-lightningcss-fix.js
-import { execSync } from "child_process";
+const { execSync } = require("child_process");
 
 try {
   console.log("⚡ Fixing lightningcss for Linux (Vercel build)...");
