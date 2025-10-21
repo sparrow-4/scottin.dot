@@ -41,7 +41,7 @@ export async function POST(request) {
             folder: "products",
         })
         const url = imagekit.url({
-            path: response.filepath,
+            path: response.filePath,
             transformation: [
                 { quality: 'auto'},
                 { format: 'webp'},
@@ -80,7 +80,7 @@ export async function GET(request) {
         const storeId =await authSeller(userId)
 
         if(!storeId){
-            return NextResponse.json({error: 'not authorized'}.{status: 401})
+            return NextResponse.json({error: 'not authorized'},{status: 401})
         }
         const product = await prisma.product.findMany({where: { storeId}})
 
