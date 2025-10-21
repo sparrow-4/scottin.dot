@@ -14,7 +14,7 @@ export async function POST(request) {
         const storeId =await authSeller(userId)
 
         if(!storeId){
-            return NextResponse.json({error: 'not authorized'}.{status: 401})
+            return NextResponse.json({error: 'not authorized'},{status: 401})
         }
 
         // get the data from the form
