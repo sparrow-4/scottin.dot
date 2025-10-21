@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "echo 'Starting build...' && prisma generate && node vercel-lightningcss-fix.js && next build",
+    "build": "echo 'Starting build...' && prisma generate && next build",
+
     "start": "next start",
     "lint": "next lint",
     "postinstall": "echo 'Running prisma generate...' && prisma generate"
@@ -38,5 +39,9 @@
     "@types/ws": "^8.18.1",
     "prisma": "^6.17.1",
     "tailwindcss": "^4"
-  }
+  },
+  "engines": {
+  "node": "22.x"
+}
+
 }
