@@ -1,7 +1,8 @@
+import imagekit from "@/configs/imagekit";
 import prisma from "@/lib/prisma";
 import { getAuth } from "@clerk/nextjs/server";
 import { NextResponse } from "next/server";
-import imagekit from "@/lib/imagekit"; // Add this import
+
 
 // create a store
 
