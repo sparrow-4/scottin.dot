@@ -2,6 +2,7 @@ import { getAuth } from "@clerk/nextjs/server";
 import { NextResponse } from "next/server";
 import prisma from "@/lib/prisma"; // Adjust path to your prisma instance
 import authAdmin from "@/middlewares/authAdmin";
+import { inngest } from "@/inngest/client";
 
 // Add new coupon
 export async function POST(request) {

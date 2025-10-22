@@ -44,7 +44,7 @@ export default function AdminApprove() {
             }
         })
             toast.success(data.message)
-            await fetchStores()
+            await Stores()
         } catch (error) {
             toast.error(error?.response?.data?.error || error.message)  
             
